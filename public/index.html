@@ -1,0 +1,60 @@
+
+<!--
+File: index.html
+Author: Vezetéknév Keresztnév
+Copyright: 2024, Vezetéknév Keresztnév
+Group: Csoportnév
+Date: 2024-12-02
+Github: https://github.com/valami12345/
+Licenc: MIT
+-->
+
+<!DOCTYPE html>
+<html lang="hu">
+  <head>
+    <meta charset="UTF-8">
+    <title>Rombusz</title>
+    <link rel="stylesheet" href="bootstrap.css">
+    <link rel="stylesheet" href="style.css">    
+  </head>
+  <body>
+    <div class="container">
+        <h1>Rombusz területe</h1>
+        <p>
+          Rombusz területe az átlókból számolva.
+        </p>
+        <div class="rhombusForm">
+          <div class="form-group">
+            <label for="ediagonal"
+            class="form-label">e átló</label>
+            <input type="number" id="ediagonal"
+            class="form-control" placeholder="e átló (cm)"
+            required>
+          </div>
+          <div class="form-group">
+            <label for="fdiagonal"
+            class="form-label">f átló</label>
+            <input type="number" id="fdiagonal"
+            class="form-control" placeholder="f átló (cm)"
+            required>
+          </div>
+          <div>
+            <button id="calcButton"
+            class="btn btn-primary my-3">Számít</button>
+            <button id="aboutButton"
+            class="btn btn-primary my-3">Névjegy</button>
+          </div>
+          <div class="input-group">
+            <span class="input-group-text">Terület:</span>
+            <input type="text" id="area"
+            class="form-control"
+            readonly>
+            <span class="input-group-text">cm<sup>2</sup></span>
+          </div>
+        </div>
+
+    </div>
+    <script src="bootstrap.js"></script>
+    <script src="app.js"></script>
+  </body>
+</html>
